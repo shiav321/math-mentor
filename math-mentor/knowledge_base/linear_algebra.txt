@@ -1,0 +1,63 @@
+TOPIC: Linear Algebra Basics
+SOURCE: JEE Math Knowledge Base
+
+=== MATRICES ===
+Types: Row, Column, Square, Diagonal, Identity (I), Zero, Symmetric, Skew-symmetric
+Transpose: (Aᵀ)ᵢⱼ = Aⱼᵢ
+(AB)ᵀ = BᵀAᵀ
+(A+B)ᵀ = Aᵀ + Bᵀ
+
+=== DETERMINANTS ===
+2×2: |A| = ad - bc for [[a,b],[c,d]]
+3×3: Expand along first row using cofactors
+
+Properties:
+- |AB| = |A||B|
+- |Aᵀ| = |A|
+- If two rows/cols are identical → det = 0
+- Swapping two rows → det changes sign
+- Multiplying a row by k → det multiplied by k
+- |kA| = kⁿ|A| for n×n matrix
+
+=== INVERSE OF A MATRIX ===
+A⁻¹ = adj(A) / |A|
+AA⁻¹ = A⁻¹A = I
+(AB)⁻¹ = B⁻¹A⁻¹
+Inverse exists only when |A| ≠ 0 (non-singular)
+
+=== SYSTEM OF LINEAR EQUATIONS ===
+AX = B
+- Unique solution: |A| ≠ 0  → X = A⁻¹B
+- No solution: |A| = 0 and B is not consistent
+- Infinite solutions: |A| = 0 and system is consistent
+
+Cramer's Rule:
+x = Dₓ/D, y = D_y/D, z = D_z/D  [where D = |A|]
+
+=== VECTORS ===
+|a| = √(a₁² + a₂² + a₃²)
+Dot product: a·b = |a||b|cos θ = a₁b₁ + a₂b₂ + a₃b₃
+Cross product: |a×b| = |a||b|sin θ
+a·b = 0 → perpendicular vectors
+a×b = 0 → parallel vectors
+
+Projection of a on b: (a·b)/|b|
+Unit vector: â = a/|a|
+
+=== RANK ===
+Rank = number of non-zero rows in row echelon form
+For AX = B:
+- rank(A) = rank(augmented) = n → unique solution
+- rank(A) = rank(augmented) < n → infinite solutions
+- rank(A) ≠ rank(augmented) → no solution
+
+=== EIGENVALUES ===
+det(A - λI) = 0 → characteristic equation
+Sum of eigenvalues = trace(A)
+Product of eigenvalues = det(A)
+
+=== COMMON MISTAKES IN LINEAR ALGEBRA ===
+- Matrix multiplication is NOT commutative: AB ≠ BA in general
+- (A+B)² ≠ A² + 2AB + B² (because AB ≠ BA)
+- Can't divide by a matrix — must multiply by inverse
+- Determinant of 3×3 needs careful sign pattern (+,-,+)

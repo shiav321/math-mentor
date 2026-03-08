@@ -1,0 +1,58 @@
+TOPIC: Probability
+SOURCE: JEE Math Knowledge Base
+
+=== BASIC PROBABILITY ===
+P(A) = (Favorable outcomes) / (Total outcomes)
+Range: 0 ≤ P(A) ≤ 1
+P(A') = 1 - P(A) [complement]
+P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+P(A ∩ B) = P(A) × P(B) [if A and B are independent]
+
+=== CONDITIONAL PROBABILITY ===
+P(A|B) = P(A ∩ B) / P(B), P(B) ≠ 0
+P(A ∩ B) = P(B) × P(A|B) = P(A) × P(B|A)
+
+=== BAYES' THEOREM ===
+P(A|B) = [P(B|A) × P(A)] / P(B)
+
+Law of Total Probability:
+P(B) = Σ P(B|Aᵢ) × P(Aᵢ)
+
+=== COUNTING PRINCIPLES ===
+Permutation: P(n,r) = n! / (n-r)!  [ORDER MATTERS]
+Combination: C(n,r) = n! / [r!(n-r)!]  [ORDER DOESN'T MATTER]
+C(n,r) = C(n, n-r)
+C(n,0) = C(n,n) = 1
+
+Multiplication principle: If event A can occur in m ways AND event B in n ways → m×n ways
+Addition principle: If event A can occur in m ways OR event B in n ways → m+n ways
+
+=== RANDOM VARIABLES ===
+Expected value: E(X) = Σ xᵢ × P(xᵢ)
+Variance: Var(X) = E(X²) - [E(X)]²
+Standard deviation: σ = √Var(X)
+E(aX+b) = aE(X) + b
+Var(aX+b) = a²Var(X)
+
+=== BINOMIAL DISTRIBUTION ===
+X ~ B(n, p): n trials, probability p of success
+P(X=r) = C(n,r) × pʳ × (1-p)^(n-r)
+E(X) = np
+Var(X) = np(1-p)
+σ = √(np(1-p))
+
+=== GEOMETRIC DISTRIBUTION ===
+P(X=k) = p × (1-p)^(k-1)  [first success on kth trial]
+E(X) = 1/p
+
+=== IMPORTANT RESULTS ===
+Mutually exclusive events: P(A ∩ B) = 0
+Exhaustive events: P(A ∪ B) = 1
+Independent events: P(A ∩ B) = P(A) × P(B)
+
+=== COMMON MISTAKES IN PROBABILITY ===
+- Confusing permutation and combination
+- Forgetting to subtract when using inclusion-exclusion
+- Confusing "at least one" with "exactly one" → P(at least 1) = 1 - P(none)
+- Not checking if events are mutually exclusive before adding
+- Confusing independent events with mutually exclusive events

@@ -1,0 +1,73 @@
+TOPIC: Algebra
+SOURCE: JEE Math Knowledge Base
+
+=== QUADRATIC EQUATIONS ===
+Standard form: ax² + bx + c = 0
+Quadratic formula: x = (-b ± √(b²-4ac)) / 2a
+Discriminant: D = b² - 4ac
+- D > 0: two distinct real roots
+- D = 0: two equal real roots
+- D < 0: no real roots (complex roots)
+
+Sum of roots: α + β = -b/a
+Product of roots: αβ = c/a
+
+Nature of roots:
+- If D is a perfect square → rational roots
+- If D > 0 and not perfect square → irrational roots
+
+=== POLYNOMIALS ===
+Factor theorem: (x-a) is a factor of p(x) if p(a) = 0
+Remainder theorem: When p(x) is divided by (x-a), remainder = p(a)
+
+Vieta's formulas for cubic ax³+bx²+cx+d=0:
+- Sum of roots: α+β+γ = -b/a
+- Sum of products two at a time: αβ+βγ+γα = c/a
+- Product of roots: αβγ = -d/a
+
+=== SEQUENCES AND SERIES ===
+Arithmetic Progression (AP):
+- General term: aₙ = a + (n-1)d
+- Sum of n terms: Sₙ = n/2 × [2a + (n-1)d]
+- Sum of n terms: Sₙ = n/2 × (a + l) where l = last term
+
+Geometric Progression (GP):
+- General term: aₙ = ar^(n-1)
+- Sum of n terms: Sₙ = a(rⁿ-1)/(r-1) for r≠1
+- Sum of infinite GP: S∞ = a/(1-r) for |r| < 1
+
+Harmonic Progression (HP):
+- General term: 1/aₙ is in AP
+- HM of a and b: H = 2ab/(a+b)
+
+AM-GM-HM inequality: AM ≥ GM ≥ HM
+
+=== INEQUALITIES ===
+AM-GM: (a+b)/2 ≥ √(ab) for positive a,b
+Cauchy-Schwarz: (a²+b²)(c²+d²) ≥ (ac+bd)²
+
+=== BINOMIAL THEOREM ===
+(a+b)ⁿ = Σ C(n,r) × aⁿ⁻ʳ × bʳ, r from 0 to n
+General term: Tᵣ₊₁ = C(n,r) × aⁿ⁻ʳ × bʳ
+Middle term: If n is even, middle term = T_(n/2+1)
+
+=== LOGARITHMS ===
+logₐ(mn) = logₐm + logₐn
+logₐ(m/n) = logₐm - logₐn
+logₐ(mⁿ) = n × logₐm
+Change of base: logₐb = log b / log a
+logₐa = 1, logₐ1 = 0
+
+=== COMPLEX NUMBERS ===
+i = √(-1), i² = -1, i³ = -i, i⁴ = 1
+|z| = √(a²+b²) for z = a+bi
+Argument: θ = arctan(b/a)
+De Moivre: (cosθ + i sinθ)ⁿ = cos(nθ) + i sin(nθ)
+Euler: e^(iθ) = cosθ + i sinθ
+
+=== COMMON MISTAKES IN ALGEBRA ===
+- Forgetting ± when taking square roots
+- Sign errors when expanding (a-b)²  = a² - 2ab + b²  NOT a² + b²
+- (a+b)² ≠ a² + b²  (must include 2ab)
+- Division by zero when variable is in denominator
+- log of negative numbers is undefined in real domain

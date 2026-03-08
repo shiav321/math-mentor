@@ -1,0 +1,68 @@
+TOPIC: Calculus - Limits, Derivatives, Integration
+SOURCE: JEE Math Knowledge Base
+
+=== LIMITS ===
+Standard limits:
+lim(x→0) sin(x)/x = 1
+lim(x→0) tan(x)/x = 1
+lim(x→0) (1-cos x)/x² = 1/2
+lim(x→∞) (1 + 1/x)^x = e
+lim(x→0) (1 + x)^(1/x) = e
+lim(x→0) (eˣ - 1)/x = 1
+lim(x→0) (aˣ - 1)/x = ln(a)
+lim(x→0) ln(1+x)/x = 1
+
+L'Hôpital's Rule: If lim f(x)/g(x) = 0/0 or ∞/∞ form:
+→ lim f(x)/g(x) = lim f'(x)/g'(x)
+
+Squeeze theorem: If g(x) ≤ f(x) ≤ h(x) and lim g = lim h = L → lim f = L
+
+=== DERIVATIVES ===
+Basic rules:
+d/dx(xⁿ) = nxⁿ⁻¹
+d/dx(sin x) = cos x
+d/dx(cos x) = -sin x
+d/dx(tan x) = sec²x
+d/dx(eˣ) = eˣ
+d/dx(ln x) = 1/x
+d/dx(aˣ) = aˣ ln(a)
+d/dx(constant) = 0
+
+Chain rule: d/dx[f(g(x))] = f'(g(x)) × g'(x)
+Product rule: d/dx[f×g] = f'g + fg'
+Quotient rule: d/dx[f/g] = (f'g - fg')/g²
+
+Implicit differentiation: differentiate both sides, solve for dy/dx
+
+=== APPLICATIONS OF DERIVATIVES ===
+Increasing function: f'(x) > 0
+Decreasing function: f'(x) < 0
+Local maxima: f'(x) = 0 and f''(x) < 0
+Local minima: f'(x) = 0 and f''(x) > 0
+Inflection point: f''(x) = 0
+
+Tangent slope at x=a: m = f'(a)
+Tangent line: y - f(a) = f'(a)(x - a)
+Normal line: y - f(a) = -1/f'(a) × (x - a)
+
+=== INTEGRATION ===
+∫xⁿ dx = xⁿ⁺¹/(n+1) + C  [n ≠ -1]
+∫1/x dx = ln|x| + C
+∫eˣ dx = eˣ + C
+∫sin x dx = -cos x + C
+∫cos x dx = sin x + C
+∫sec²x dx = tan x + C
+∫aˣ dx = aˣ/ln(a) + C
+
+Integration by parts: ∫u dv = uv - ∫v du  (LIATE rule for u)
+LIATE: Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential
+
+Definite integral: ∫[a to b] f(x)dx = F(b) - F(a)
+Area between curves: ∫[a to b] |f(x) - g(x)| dx
+
+=== COMMON MISTAKES IN CALCULUS ===
+- Forgetting +C in indefinite integrals
+- Wrong sign in d/dx(cos x) = -sin x (not +sin x)
+- Not applying chain rule when differentiating composite functions
+- Confusing when to use product rule vs chain rule
+- L'Hopital only applies to 0/0 or ∞/∞ forms

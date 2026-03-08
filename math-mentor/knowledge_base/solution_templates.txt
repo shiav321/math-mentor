@@ -1,0 +1,57 @@
+TOPIC: Solution Templates and Problem-Solving Patterns
+SOURCE: JEE Math Knowledge Base
+
+=== SOLVING QUADRATIC EQUATIONS: TEMPLATE ===
+Step 1: Write in standard form ax² + bx + c = 0
+Step 2: Calculate discriminant D = b² - 4ac
+Step 3: If D ≥ 0, apply quadratic formula x = (-b ± √D) / 2a
+Step 4: Simplify roots
+Step 5: Verify by substituting back
+Step 6: State answer with domain constraints
+
+=== SOLVING PROBABILITY PROBLEMS: TEMPLATE ===
+Step 1: Identify sample space S and find n(S)
+Step 2: Identify the event A
+Step 3: Count favorable outcomes n(A)
+Step 4: Apply P(A) = n(A)/n(S)
+Step 5: Check if events are independent or mutually exclusive
+Step 6: Use addition/multiplication rules as needed
+Step 7: Verify answer is between 0 and 1
+
+=== FINDING MAXIMA/MINIMA: TEMPLATE ===
+Step 1: Define the objective function f(x)
+Step 2: Find f'(x)
+Step 3: Set f'(x) = 0, solve for critical points
+Step 4: Find f''(x)
+Step 5: If f''(x) < 0 → maxima; f''(x) > 0 → minima
+Step 6: Evaluate f at critical points and boundary points
+Step 7: Compare to find global max/min
+
+=== INTEGRATION STRATEGY: TEMPLATE ===
+Step 1: Look for direct formula match
+Step 2: Try substitution (u-sub): set u = inner function
+Step 3: Try integration by parts if product: ∫u dv = uv - ∫v du
+Step 4: For rational functions: partial fractions
+Step 5: For trig: use identities to simplify
+Step 6: Add +C for indefinite integrals
+Step 7: For definite: evaluate at bounds
+
+=== PERMUTATION vs COMBINATION DECISION GUIDE ===
+Ask: Does ORDER matter?
+YES → Permutation P(n,r) = n!/(n-r)!
+NO → Combination C(n,r) = n!/[r!(n-r)!]
+
+Keywords for Permutation: arrange, order, rank, sequence
+Keywords for Combination: select, choose, pick, group, committee
+
+=== COMMON JEE PROBLEM PATTERNS ===
+Pattern 1: "At least one" → Use complement: 1 - P(none)
+Pattern 2: "Exactly k out of n" → Binomial distribution C(n,k)p^k(1-p)^(n-k)
+Pattern 3: "Sum of digits" → AP formula
+Pattern 4: "Product of roots" → Vieta's formulas
+Pattern 5: "Rate of change" → Derivatives
+Pattern 6: "Area under curve" → Definite integral
+Pattern 7: "Maximum profit / minimum cost" → Optimization via derivatives
+Pattern 8: "n people in a row" → n! permutations
+Pattern 9: "Committee of r from n" → C(n,r) combinations
+Pattern 10: "Divisibility" → Modular arithmetic or factor theorem
